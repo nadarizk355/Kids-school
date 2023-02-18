@@ -4,7 +4,7 @@ namespace WebApplication1.Controllers
 {
     public class AboutController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Abput()
         {
             return View();
         }
