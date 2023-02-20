@@ -25,8 +25,7 @@ namespace WebApplication1.Controllers
                 return View(model);
 
             }
-            catch (Exception 
-            ex)
+            catch (Exception ex)
             {
                 return View(model);
 
