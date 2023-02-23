@@ -16,7 +16,7 @@
                     <h5>"I want a great experience for my kids"</h5>
 
                     <img class="list-inline m-0" src="~/img/1.jpg">
-                    <button class="btn btn-secondary btn-block border-0 py-3" href="http://localhost:5153/Acount/Login" type="button">Register  A FREE Account</button>
+                    <a asp-controller="Acount" asp-action="RegistrationParent" class="btn btn-secondary btn-block border-0 py-3" >Register  A FREE Account</a>
 
                 </div>
                 <div class="col-lg-5">
@@ -28,7 +28,7 @@
 
 
                     <img class="list-inline m-0" src="~/img/55.jpg">
-                    <button class="btn btn-secondary btn-block border-0 py-3" href"" type="button">Register  A FREE Account</button>
+                    <a asp-controller="Acount" asp-action="RegistrationKids" class="btn btn-secondary btn-block border-0 py-3" >Register  A FREE Account</a>
 
                 </div>
 
@@ -36,8 +36,12 @@
         </div>
     </div>
 </div>
-<div >
-
+<div class="col-lg-5">
+    <div class="card border-0">
+        <div class="card-header bg-secondary text-center p-4">
+            <h1 class="text-white m-0">Login</h1>
+        </div>
+        <div class="card-body rounded-bottom bg-primary p-5">
        
   <form asp-controller="Acount" asp-action="Registration">
                     <div class="msg">Register a new membership</div>
@@ -86,8 +90,8 @@
                 </form>
 
 </div>
-
-
+</div>
+</div>
     <script src="~/plugins/jquery/jquery.min.js"></script>
     <script src="~/plugins/jquery-validation/jquery.validate.js"></script>
     <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>

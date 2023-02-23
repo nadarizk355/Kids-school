@@ -6,8 +6,6 @@ namespace WebApplication1.Controllers
     public class AcountController : Controller
     {
 
-
-
         public IActionResult Registration()
         {
             return View();
@@ -31,6 +29,17 @@ namespace WebApplication1.Controllers
 
             }
         }
+
+        public IActionResult RegistrationParent()
+        {
+            return View();
+        }
+
+        public IActionResult RegistrationKids()
+        {
+            return View();
+        }
+
 
 
         public IActionResult Login()
