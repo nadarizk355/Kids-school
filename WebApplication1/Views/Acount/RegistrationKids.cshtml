@@ -4,62 +4,70 @@
     Layout = "~/Views/Layout/SecondLayout.cshtml";
 }
 
-<h1 id="a8" >RegistrationKids</h1>
+<h1 class="pt-5 pb-3 text-center">
+    Kids’ Registration
+</h1>
+<h5 class =" pb-1 fs-1 text-center">You will have immediate access to CodeKids courses</h5>
+<div class="d-flex justify-content-center">
 <div class="col-lg-5">
     <div class="card border-0">
         <div class="card-header bg-secondary text-center p-4">
-            <h1 class="text-white m-0">Login</h1>
+            <h1 class="text-white m-0">Sing Up</h1>
         </div>
         <div class="card-body rounded-bottom bg-primary p-5">
 
-            <form asp-controller="Acount" asp-action="Registration">
-                <div class="msg">Register a new membership</div>
 
-
-                <div asp-validation-summary="All" class="text-danger"></div>
-
-                <div class="input-group">
-                    <span class="input-group-addon">
-                        <i class="material-icons">email</i>
-                    </span>
-                    <div class="form-line">
-                        <input type="email" class="form-control" autofocus placeholder="Email Address">
-                        <span  text-danger"></span>
+                <form asp-controller="Acount" asp-action="RegisterationKids">
+                    <div class="form-group">
+                    <div class="form-group text-light fs-3">
+                        <label for="exampleInputUserName">UserName</label>
+                            <input type="text" name="UserName" class="form-control is-invalid" id="exampleInputEmail1" placeholder="Enter  your UserName" aria-describedby="exampleInputEmail1-error" aria-invalid="true">
+                        <span id="exampleInputUserName-error" class="error invalid-feedback">Please enter a UserName </span>
                     </div>
+            
                 </div>
-                <div class="input-group">
-                    <span class="input-group-addon">
-                        <i class="material-icons">lock</i>
-                    </span>
-                    <div class="form-line">
-                        <input type="password" class="form-control" placeholder="Password">
-                        <span  class="text-danger"></span>
 
+                   
+                    <div class="form-group">
+                        <div class="form-group text-light">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" name="password"  class="form-control is-invalid" id="exampleInputPassword1" placeholder="Password" aria-describedby="exampleInputPassword1-error" aria-invalid="true">
+                            <span id="exampleInputPassword1-error"  class="error invalid-feedback">Please provide a password</span>
+                        </div>
                     </div>
-                </div>
-                <div class="input-group">
-                    <span class="input-group-addon">
-                        <i class="material-icons">lock</i>
-                    </span>
-                    <div class="form-line">
-                        <input type="password" class="form-control"  placeholder="Confirm Password">
-                        <span  class="text-danger"></span>
 
+                    <div class="form-group">
+                        <div class="form-group text-light">
+                            <label for="exampleInputAge">Age</label>
+                            <input type="number" name="Age" class="form-control is-invalid" id="exampleInputAge1" placeholder="Age" aria-describedby="exampleInputAge1-error" aria-invalid="true">
+                            <span id="exampleInputAge-error" class="error invalid-feedback">Please enter a Age</span>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <input type="checkbox" class="filled-in chk-col-pink">
-                    <label>I read and agree to the <a href="javascript:void(0);">terms of usage</a>.</label>
-                </div>
-                <input type="submit" value="SIGN UP" class="btn btn-block btn-lg bg-pink waves-effect" />
 
-                <div class="m-t-25 m-b--5 align-center">
-                    <a asp-controller="Account" asp-action="Login">You already have a membership?</a>
-                </div>
-            </form>
+                    <div class="form-group">
+                        <select class="custom-select border-0 px-4 mb-5"
+                                style="height: 47px">
+                            <option selected>Select Gender </option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        
+                        </select>
+                    </div>
+                   
+                   
+                        <button class="btn btn-secondary btn-block border-0 py-3 mt-4 mb-3"
+                                type="submit">
+                           GO
+                        </button>
 
+
+                    <p class="text-light fs-3">You already have a membership? <a id="txt" class="text-muted text-light" asp-controller="Acount" asp-action="Login">Login</a></p>
+                
+           </form>
+            
         </div>
     </div>
+</div>
 </div>
 <script src="~/plugins/jquery/jquery.min.js"></script>
 <script src="~/plugins/jquery-validation/jquery.validate.js"></script>

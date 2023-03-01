@@ -1,9 +1,19 @@
-#a1{
-    height:800px;
+:root {
+    --sectationcolour: #ffc107;
 }
-#a2{
-    padding: 50px;
+
+
+
+
+/* Start Home*/
+#head {
+    height: 800px;
 }
+
+
+/*End Home*/
+
+
 #a3{
     border-radius:50%;
     
@@ -11,23 +21,15 @@
 #a4{
     margin:20px;
 }
-#a5 {
-    margin-top: 60px ;
-    margin-right:140px !important ;
-    margin-bottom: 60px;
-}
+
 #a6{
     margin-left:90px;
 }
 #a7{
     margin-left: 90px;
 }
-#a8{
-   text-align:center;
-   padding:60px;
 
-}
-#big{}
+
 #a10 {
     margin-top: 20px;
 }
@@ -41,14 +43,30 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom:90px;
 }
-#b4{
+/*Start About*/
+#text{
     font-size:19px;
 }
+/*End About */
 #b5{
     margin-right:140px;
 }
 #b6{
     width:600px;
     height:800px;
-    margin-left:250;
+    margin-left:250px;
 }
+/*Start Login*/
+#txt{
+    color:#fff;
+    font-size:40px;
+}
+/*End Login*/
+/*Start Forget*/
+#forgett {
+    width: 100%;
+    height: 100%;
+}
+/*End Forget*/
+
+
