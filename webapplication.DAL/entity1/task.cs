@@ -20,6 +20,6 @@ namespace webapplication.DAL.entity1
         public int Idlecture { get; set; }
         public student student { get; set; }
 
-        public lecture lecture { get; set; }
+        public lecturer lecture { get; set; }
     }
 }

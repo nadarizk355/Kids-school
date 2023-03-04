@@ -19,7 +19,7 @@ namespace webapplication.DAL.entity1
         public string Date { get; set; }
         public string text { get; set; }
         public student student { get; set; }
-        public lecture lecture { get; set; }
+        public lecturer lecture { get; set; }
     }
 
 }

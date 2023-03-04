@@ -16,6 +16,6 @@ namespace webapplication.DAL.entity1
         public double coast { get; set; }
         public List<student_cource> student_Cources { get; set; }
         public List<session> session { get; set; }
-        public lecture lecture { get; set; }
+        public lecturer lecture { get; set; }
     }
 }

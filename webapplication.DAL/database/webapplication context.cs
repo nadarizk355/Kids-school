@@ -19,7 +19,7 @@ namespace webapplication.DAL.database
         public DbSet<parent> parent { get; set; }
         public DbSet<Communications> Communications { get; set; }
         public DbSet<lectuerstudent> lectuerstuden { get; set; }
-        public DbSet<lecture> lecture { get; set; }
+        public DbSet<lecturer> lecture { get; set; }
         public DbSet<student_cource> student_cource { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -31,14 +31,14 @@ namespace webapplication.DAL.database
         {
             modelBuilder.Entity<student_cource>().HasKey(x => new { x.idstudent, x.idcourse });
             modelBuilder.Entity<lectuerstudent>().HasKey(x => new { x.idstudent, x.idlectuer });
-            modelBuilder.Entity<course>().HasOne<lecture>(e => e.lecture).WithMany(d => d.course);
+            modelBuilder.Entity<course>().HasOne<lecturer>(e => e.lecture).WithMany(d => d.course);
             modelBuilder.Entity<session>().HasOne<course>(e => e.course).WithMany(d => d.session);
-            modelBuilder.Entity<session>().HasOne<lecture>(e => e.lecture).WithMany(d => d.session);
+            modelBuilder.Entity<session>().HasOne<lecturer>(e => e.lecture).WithMany(d => d.session);
             modelBuilder.Entity<student>().HasOne<parent>(e => e.parent).WithMany(d => d.student);
             modelBuilder.Entity<Communications>().HasOne<student>(e => e.student).WithMany(d => d.Communications);
-            modelBuilder.Entity<Communications>().HasOne<lecture>(e => e.lecture).WithMany(d => d.Communications);
+            modelBuilder.Entity<Communications>().HasOne<lecturer>(e => e.lecture).WithMany(d => d.Communications);
             modelBuilder.Entity<tasks>().HasOne<student>(e => e.student).WithMany(d => d.tasks);
-            modelBuilder.Entity<tasks>().HasOne<lecture>(e => e.lecture).WithMany(d => d.tasks);
+            modelBuilder.Entity<tasks>().HasOne<lecturer>(e => e.lecture).WithMany(d => d.tasks);
             base.OnModelCreating(modelBuilder);
         }
     }

@@ -17,6 +17,6 @@ namespace webapplication.DAL.entity1
         public string linkviedo { get; set; }
         public int sessiontime { get; set; }
         public course course { get; set; }
-        public lecture lecture { get; set; }
+        public lecturer lecture { get; set; }
     }
 }
