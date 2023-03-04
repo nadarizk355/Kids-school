@@ -11,7 +11,7 @@ namespace webapplication.DAL.entity1
     {
         [ForeignKey("lecture")]
         public int idlectuer { get; set; }
-        public lecture lecture { get; set; }
+        public lecturer lecture { get; set; }
         [ForeignKey("student")]
         public int idstudent { get; set; }
 

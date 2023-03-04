@@ -7,7 +7,7 @@ using static System.Collections.Specialized.BitVector32;
 
 namespace webapplication.DAL.entity1
 {
-    public class lecture
+    public class lecturer
     {
         public int Id { get; set; }
 
