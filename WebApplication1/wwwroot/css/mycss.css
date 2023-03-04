@@ -1,5 +1,7 @@
 :root {
     --sectationcolour: #ffc107;
+    --blue: #007bff;
+    --secondary: #00394f;
 }
 
 
@@ -58,10 +60,21 @@
 }
 /*Start Login*/
 #txt{
-    color:#fff;
-    font-size:40px;
+    color:var( --secondary )!important;
+    font-size:20px;
 }
 /*End Login*/
+/*Start Registration*/
+#btnparent{
+width:80%;
+}
+ 
+#btnkid{
+
+}
+/*End Regeratration*/
+
+
 /*Start Forget*/
 #forgett {
     width: 100%;
