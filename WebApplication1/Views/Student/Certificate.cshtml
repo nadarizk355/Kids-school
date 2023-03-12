@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "Certificate";
+    Layout = "~/Views/Layout/ThreeLayout.cshtml";
+}
+<div class="container-fluid bg-primary mb-5">
+
+    <div class="d-flex flex-column align-items-center justify-content-center"
+         style="min-height: 400px">
+        <h3 class="display-3 font-weight-bold text-white">Certificate</h3>
+
+        <img class="justify-content-center" width="200px" src="~/img/3281329.png" alt="Certificate">
+     </div>
+    </div>
+
+<div id="card" class="container-fluid  mb-5 ">
+    <div  class="d-flex flex-column align-items-center justify-content-center "
+         style="min-height: 350px">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <h3 class="d font-weight-bold  text-dark text-center">You have not completed any courses yet.</h3>
+            <h3 class="font-weight-bold text-dark text-center">
+                Please click
+                <a class="display-0 font-weight-bold text" asp-action="index" asp-controller="Student">
+                    here
+                </a>
+                to complete the courses.
+            </h3>
+        </div>
+    </div>
+</div>
+

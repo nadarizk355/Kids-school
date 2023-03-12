@@ -2,10 +2,11 @@
     --sectationcolour: #ffc107;
     --blue: #007bff;
     --secondary: #00394f;
+    --primary: #17a2b8;
+    --gray: #6c757d;
+    --yellow: #fceec4;
+    --with: #f6f3e6;
 }
-
-
-
 
 /* Start Home*/
 #head {
@@ -15,62 +16,66 @@
 
 /*End Home*/
 
-
-#a3{
-    border-radius:50%;
-    
-}
-#a4{
-    margin:20px;
+#a3 {
+    border-radius: 50%;
 }
 
-#a6{
-    margin-left:90px;
+#a4 {
+    margin: 20px;
 }
-#a7{
+
+#a6 {
     margin-left: 90px;
 }
 
+#a7 {
+    margin-left: 90px;
+}
 
 #a10 {
     margin-top: 20px;
 }
-#b1{
-    padding:30px;
-    text-align:center;
+
+#b1 {
+    padding: 30px;
+    text-align: center;
 }
+
 #b3 {
-    margin-top:35px;
+    margin-top: 35px;
     font-size: 27px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom:90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 90px;
 }
+
 /*Start About*/
-#text{
-    font-size:19px;
+#text {
+    font-size: 19px;
 }
 /*End About */
-#b5{
-    margin-right:140px;
+
+#b5 {
+    margin-right: 140px;
 }
-#b6{
-    width:600px;
-    height:800px;
-    margin-left:250px;
+
+#b6 {
+    width: 600px;
+    height: 800px;
+    margin-left: 250px;
 }
 /*Start Login*/
-#txt{
-    color:var( --secondary )!important;
-    font-size:20px;
+#txt {
+    color: var( --secondary ) !important;
+    font-size: 20px;
 }
 /*End Login*/
-/*Start Registration*/
-#btnparent{
-width:80%;
-}
- 
-#btnkid{
 
+/*Start Registration*/
+#btnparent {
+    width: 80%;
+}
+
+#btnkid {
 }
 /*End Regeratration*/
 
@@ -82,4 +87,89 @@ width:80%;
 }
 /*End Forget*/
 
+/*Start student*/
+#homestudent {
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary);
+}
 
+#profile {
+}
+
+#Drop {
+    margin-right: 100px !important;
+}
+/*End student */
+
+/* start profile*/
+#ccontiner {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#left {
+    padding: 50px;
+    margin-bottom: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#right {
+    flex-direction: column;
+    display: flex;
+    width: 700px;
+    height: 900px;
+}
+
+#big {
+    margin-bottom: 80px;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0.19, 0.19, 0.19);
+}
+
+#small {
+    width: 600px;
+    height: 488px;
+    display: flex;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0.19, 0.19,0.19, 0.19);
+}
+
+
+input {
+    display: block;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+}
+
+#bottom {
+    padding-top: 30px;
+    width: 30%;
+}
+
+#imgprofile {
+}
+
+#acount {
+    margin-left: 90px;
+}
+/* end profile*/
+
+/*start certificate*/
+#card {
+    width: 70%;
+    height: 20%;
+    background-color: var( --yellow);
+    border-radius: 20px;
+}
+/*end certificate*/

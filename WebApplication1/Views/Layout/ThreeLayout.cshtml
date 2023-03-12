@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
+          rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+          rel="stylesheet" />
+
+    <!-- Flaticon Font -->
+    <link href="~/lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="~/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css//mycss.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+            <a asp-action="index" asp-controller="Home" class="navbar-brand font-weight-bold text-secondary"
+               style="font-size: 50px">
+                <img width="55" src="~/img/4260895.png" alt="" />
+                <span class="text-primary">CodeKids</span>
+            </a>
+            <button type="button"
+                    class="navbar-toggler"
+                    data-toggle="collapse"
+                    data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between"
+                 id="navbarCollapse">
+                <div class="navbar-nav font-weight-bold mx-auto py-0">
+                    <a asp-action="index" asp-controller="Student" class="nav-item nav-link active">Courses</a>
+                    <a asp-action="Games" asp-controller="Student" class="nav-item nav-link">Games</a>
+                    <a asp-action="Certificate" asp-controller="Student" class="nav-item nav-link">Certificate</a>
+                    <a asp-action="Chat" asp-controller="Student" class="nav-item nav-link">Chat</a>
+                </div>
+            </div>
+
+            <div id="profile" class="">
+
+                <a href=""> <img width="45" class="pt-2 mr-lg-0" data-v-5348ef38="" src="~/img/668205.png" alt="user image"></a>
+            </div>
+
+            <div id="Drop" class="nav-item dropdown mr-lg-5 ">
+                <a href="#"
+                   class="nav-link dropdown-toggle"
+                   data-toggle="dropdown"></a>
+                <div class="dropdown-menu rounded-0  ">
+                    <a asp-action="Profile" asp-controller="Student" class="dropdown-item">Account informantion</a>
+                    <a asp-action="Index" asp-controller="Home" class="dropdown-item">log Out</a>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+    <!-- Navbar End -->
+    <div>
+        @RenderBody()
+    </div>
+
+
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!-- Visual Studio Browser Link -->
+    <script type="text/javascript" src="/_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestId="f2157c188a1d4e93ba011a31ea2a5ce0" data-requestMappingFromServer="false" data-connectUrl="http://localhost:59786/1f1240cff75f490e842f396ba2257e99/browserLink"></script>
+    <!-- End Browser Link -->
+
+    <script src="/_framework/aspnetcore-browser-refresh.js"></script>
+</body>
+</html>
