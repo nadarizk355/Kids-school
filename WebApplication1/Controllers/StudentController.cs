@@ -4,7 +4,7 @@ namespace WebApplication1.Controllers
 {
     public class StudentController : Controller
     {
-        public IActionResult Student()
+        public IActionResult StudentDashboard()
         {
             return View();
         }
